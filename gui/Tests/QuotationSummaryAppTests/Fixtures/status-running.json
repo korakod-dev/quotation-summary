@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "engine_version": "1.1.0",
+  "generated_at": "2026-11-10T09:30:00+07:00",
+  "ok": true,
+  "error_code": null,
+  "error": null,
+  "source_folder": "/Users/example/QuotationSummary/ใบเสนอราคาที่ขายงานได้",
+  "output_file": "/Users/example/QuotationSummary/out/สรุปใบเสนอราคา.xlsx",
+  "output_exists": true,
+  "output_mtime": "2026-11-10T08:30:00+07:00",
+  "running": true,
+  "progress": {
+    "total": 9,
+    "done": 2,
+    "current_file": "ใหม่ ยังไม่ได้อ่าน.pdf",
+    "started_at": "2026-11-10T09:29:10+07:00",
+    "trigger": "app"
+  },
+  "last_run": {
+    "started_at": "2026-11-09T08:00:02+07:00",
+    "finished_at": "2026-11-09T08:04:40+07:00",
+    "trigger": "schedule",
+    "exit_code": 2,
+    "interrupted": false,
+    "stats": {
+      "cached": 6,
+      "claude": 2,
+      "text": 0,
+      "failed": 1
+    },
+    "issues": [
+      "QT0000000003 ตรวจยอด.pdf: ยอดไม่ลงตัว"
+    ]
+  },
+  "schedule": {
+    "installed": true,
+    "label": "com.korakod.quotation-summary",
+    "weekday": 1,
+    "hour": 8,
+    "minute": 0,
+    "next_run": "2026-11-16T08:00:00+07:00"
+  },
+  "counts": {
+    "total": 9,
+    "done": 3,
+    "check": 4,
+    "waiting": 1,
+    "error": 1
+  },
+  "files": [
+    {
+      "name": "เสีย อ่านไม่ได้.pdf",
+      "sha256": "c195d2d8756234367242ba7616c5c60369bc25ced2dcb5b92808d31b58ef217a",
+      "size": 5,
+      "added": "2026-11-09",
+      "status": "error",
+      "method": null,
+      "will_retry": true,
+      "detail": "Claude อ่านไฟล์นี้ไม่สำเร็จ (หมดเวลา)",
+      "quote_no": null,
+      "company": null,
+      "total": null
+    },
+    {
+      "name": "ใหม่ ยังไม่ได้อ่าน.pdf",
+      "sha256": "3ba8d02b16fd2a01c1a8ba1a1f036d7ce386ed953696fa57331c2ac48a80b255",
+      "size": 5,
+      "added": "2026-11-09",
+      "status": "waiting",
+      "method": null,
+      "will_retry": true,
+      "detail": "ยังไม่ได้อ่าน รอรอบถัดไป",
+      "quote_no": null,
+      "company": null,
+      "total": null
+    },
+    {
+      "name": "QT0000000003 ตรวจยอด.pdf",
+      "sha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "size": 5,
+      "added": "2026-11-03",
+      "status": "check",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "ยอดไม่ลงตัว: ก่อน VAT 1,000.00 + VAT 70.00 != รวม 9,999.00",
+      "quote_no": "QT0000000003",
+      "company": "Company A",
+      "total": 9999.0
+    },
+    {
+      "name": "QT0000000004 อ่านด้วย text.pdf",
+      "sha256": "04efaf080f5a3e74e1c29d1ca6a48569382cbbcd324e8d59d2b83ef21c039f00",
+      "size": 4,
+      "added": "2026-11-03",
+      "status": "check",
+      "method": "text",
+      "will_retry": true,
+      "detail": "อ่านด้วย pdftotext (ไม่ใช่ Claude) ควรตรวจเทียบกับ PDF; รอบหน้าจะลองอ่านด้วย Claude ใหม่",
+      "quote_no": "QT0000000004",
+      "company": "Company A",
+      "total": 1070.0
+    },
+    {
+      "name": "QT0000000005 ผู้ขายอื่น.pdf",
+      "sha256": "222b0bd51fcef7e65c2e62db2ed65457013bab56be6fafeb19ee11d453153c80",
+      "size": 4,
+      "added": "2026-11-03",
+      "status": "check",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "ผู้ขาย 'บริษัท อื่น จำกัด' ไม่ตรงกับบริษัทใน config",
+      "quote_no": "QT0000000005",
+      "company": null,
+      "total": 1070.0
+    },
+    {
+      "name": "QT0000000006.pdf",
+      "sha256": "21f813ba1b1214e34df6fd9d0255157a46f7d971af01dd0f66c89a3224b24962",
+      "size": 7,
+      "added": "2026-11-03",
+      "status": "check",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "มีฉบับแก้ไขใหม่กว่า (QT0000000006 Rev.1) จึงไม่นับฉบับนี้",
+      "quote_no": "QT0000000006",
+      "company": "Company A",
+      "total": 1070.0
+    },
+    {
+      "name": "QT0000000001 ลูกค้า ก.pdf",
+      "sha256": "7692c3ad3540bb803c020b3aee66cd8887123234ea0c6e7143c0add73ff431ed",
+      "size": 3,
+      "added": "2026-11-03",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT0000000001",
+      "company": "Company A",
+      "total": 1070.0
+    },
+    {
+      "name": "QT0000000002 ลูกค้า ข.pdf",
+      "sha256": "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3",
+      "size": 3,
+      "added": "2026-11-03",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT0000000002",
+      "company": "Company A",
+      "total": 1070.0
+    },
+    {
+      "name": "QT0000000006 Rev.1.pdf",
+      "sha256": "f68cd68a954e25f66204da77b17edcd27665c22d28b395294eb21b7a484176b3",
+      "size": 7,
+      "added": "2026-11-03",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT0000000006 Rev.1",
+      "company": "Company A",
+      "total": 1070.0
+    }
+  ]
+}

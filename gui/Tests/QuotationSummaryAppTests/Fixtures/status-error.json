@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "engine_version": "1.1.0",
+  "generated_at": "2026-11-10T09:30:00+07:00",
+  "ok": false,
+  "error_code": "source_missing",
+  "error": "ไม่พบโฟลเดอร์ PDF: /Users/example/QuotationSummary/ใบเสนอราคาที่ขายงานได้",
+  "source_folder": "/Users/example/QuotationSummary/ใบเสนอราคาที่ขายงานได้",
+  "output_file": "/Users/example/QuotationSummary/out/สรุปใบเสนอราคา.xlsx",
+  "output_exists": true,
+  "output_mtime": "2026-11-10T08:30:00+07:00",
+  "running": false,
+  "progress": null,
+  "last_run": {
+    "started_at": "2026-11-09T08:00:02+07:00",
+    "finished_at": "2026-11-09T08:04:40+07:00",
+    "trigger": "schedule",
+    "exit_code": 2,
+    "interrupted": false,
+    "stats": {
+      "cached": 6,
+      "claude": 2,
+      "text": 0,
+      "failed": 1
+    },
+    "issues": [
+      "QT0000000003 ตรวจยอด.pdf: ยอดไม่ลงตัว"
+    ]
+  },
+  "schedule": {
+    "installed": true,
+    "label": "com.korakod.quotation-summary",
+    "weekday": 1,
+    "hour": 8,
+    "minute": 0,
+    "next_run": "2026-11-16T08:00:00+07:00"
+  },
+  "counts": {
+    "total": 0,
+    "done": 0,
+    "check": 0,
+    "waiting": 0,
+    "error": 0
+  },
+  "files": []
+}

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "ok": false,
+  "error_code": "not_installed",
+  "error": "ยังไม่ได้ติดตั้ง: ไม่พบสภาพแวดล้อม Python (.venv) ของโปรแกรม",
+  "generated_at": "2026-11-10T09:30:00+07:00"
+}

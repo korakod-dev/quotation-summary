@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "engine_version": "1.1.0",
+  "generated_at": "2026-11-10T09:30:00+07:00",
+  "ok": true,
+  "error_code": null,
+  "error": null,
+  "source_folder": "/Users/example/QuotationSummary/ใบเสนอราคาที่ขายงานได้",
+  "output_file": "/Users/example/QuotationSummary/out/สรุปใบเสนอราคา.xlsx",
+  "output_exists": true,
+  "output_mtime": "2026-11-09T08:04:40+07:00",
+  "running": true,
+  "progress": {
+    "total": 9,
+    "done": 4,
+    "current_file": "QT2026-0109 สแกนเบลอ.pdf",
+    "started_at": "2026-11-10T09:29:10+07:00",
+    "trigger": "app"
+  },
+  "last_run": {
+    "started_at": "2026-11-09T08:00:02+07:00",
+    "finished_at": "2026-11-09T08:04:40+07:00",
+    "trigger": "schedule",
+    "exit_code": 0,
+    "interrupted": false,
+    "stats": {
+      "cached": 7,
+      "claude": 2,
+      "text": 0,
+      "failed": 0
+    },
+    "issues": []
+  },
+  "schedule": {
+    "installed": true,
+    "label": "com.korakod.quotation-summary",
+    "weekday": 1,
+    "hour": 8,
+    "minute": 0,
+    "next_run": "2026-11-16T08:00:00+07:00"
+  },
+  "counts": {
+    "total": 9,
+    "done": 5,
+    "check": 2,
+    "waiting": 2,
+    "error": 0
+  },
+  "files": [
+    {
+      "name": "QT2026-0110 ลูกค้าตัวอย่าง ช.pdf",
+      "sha256": "6936835132764c36d00e6cd11513fa1187a04d8250fa7cdb9e43959a92cfb0ae",
+      "size": 1000,
+      "added": "2026-11-10",
+      "status": "waiting",
+      "method": null,
+      "will_retry": true,
+      "detail": "ยังไม่ได้อ่าน รอรอบถัดไป",
+      "quote_no": null,
+      "company": null,
+      "total": null
+    },
+    {
+      "name": "QT2026-0109 สแกนเบลอ.pdf",
+      "sha256": "1e368e556834f5caa164dc145278ad56eb05cb5f93a6fe14bea9c215d6d12e6a",
+      "size": 1000,
+      "added": "2026-11-09",
+      "status": "waiting",
+      "method": null,
+      "will_retry": true,
+      "detail": "ยังไม่ได้อ่าน รอรอบถัดไป",
+      "quote_no": null,
+      "company": null,
+      "total": null
+    },
+    {
+      "name": "QT2026-0107 ตรวจยอด.pdf",
+      "sha256": "60422eb79f240699416b6b96a5aa80c083399cbae2737b69d0aefb1e557d5a67",
+      "size": 1000,
+      "added": "2026-11-03",
+      "status": "check",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "ยอดไม่ลงตัว: ก่อน VAT 1,000.00 + VAT 70.00 != รวม 1,700.00",
+      "quote_no": "QT2026-0107",
+      "company": "Example Co. A",
+      "total": 1700.0
+    },
+    {
+      "name": "QT2026-0106 อ่านด้วย text.pdf",
+      "sha256": "ab3dedf215ebf4e35878e57a05a1304140976b2832931cf870187e73217d6322",
+      "size": 1000,
+      "added": "2026-11-03",
+      "status": "check",
+      "method": "text",
+      "will_retry": true,
+      "detail": "อ่านด้วย pdftotext (ไม่ใช่ Claude) ควรตรวจเทียบกับ PDF; รอบหน้าจะลองอ่านด้วย Claude ใหม่",
+      "quote_no": "QT2026-0106",
+      "company": "Example Co. B",
+      "total": 21400.0
+    },
+    {
+      "name": "QT2026-0105 บริษัท ลูกค้าตัวอย่าง ค จำกัด.pdf",
+      "sha256": "dfe52677835693bc32ad2adc59fa5106c8d244afc032d2b30db7b2634fd5906e",
+      "size": 1000,
+      "added": "2026-11-03",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT2026-0105",
+      "company": "Example Co. B",
+      "total": 53500.0
+    },
+    {
+      "name": "QT2026-0104 บริษัท ลูกค้าตัวอย่าง ง จำกัด.pdf",
+      "sha256": "8c1be66c55b3b665831bdac2298dc63768bf5b080c10e3698007865027301698",
+      "size": 1000,
+      "added": "2026-11-03",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT2026-0104",
+      "company": "Example Co. A",
+      "total": 12840.0
+    },
+    {
+      "name": "QT2026-0103 ห้างหุ้นส่วนตัวอย่าง จ.pdf",
+      "sha256": "1dacaf1ed3aaab587d80957eb8397ffec553c62e94388bb9b472c8dbbd0cdf4a",
+      "size": 1000,
+      "added": "2026-10-27",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT2026-0103",
+      "company": "Example Co. A",
+      "total": 8560.0
+    },
+    {
+      "name": "QT2026-0102 บริษัท ลูกค้าตัวอย่าง ข จำกัด.pdf",
+      "sha256": "6e83083f39789fcabcd8525eb94b88e44b62ba3be3868d8f783e70e1c5caa0cc",
+      "size": 1000,
+      "added": "2026-10-27",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT2026-0102",
+      "company": "Example Co. B",
+      "total": 32100.0
+    },
+    {
+      "name": "QT2026-0101 บริษัท ลูกค้าตัวอย่าง ก จำกัด.pdf",
+      "sha256": "f13d791b0e9735119331e813aca4d0c5d6b37de08e7aa5aa5bbc00a003f60555",
+      "size": 1000,
+      "added": "2026-10-27",
+      "status": "done",
+      "method": "claude",
+      "will_retry": false,
+      "detail": "",
+      "quote_no": "QT2026-0101",
+      "company": "Example Co. A",
+      "total": 1070.0
+    }
+  ]
+}

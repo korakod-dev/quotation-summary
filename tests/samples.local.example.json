@@ -1,0 +1,12 @@
+{
+  "example-quotation.pdf": {
+    "quote_no": "QT0000000001",
+    "date": "2026-01-05",
+    "seller_tax_id": "0100000000001",
+    "customer": "บริษัท ลูกค้า ตัวอย่าง จำกัด",
+    "subtotal": 1000.0,
+    "vat": 70.0,
+    "total": 1070.0,
+    "n_items": 1
+  }
+}

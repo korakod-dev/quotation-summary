@@ -1,0 +1,15 @@
+# Real company data and local test data: never commit
+config.json
+config.json.*
+tests/samples.local.json
+
+# Python / build output
+.venv/
+__pycache__/
+build/
+gui/.build/
+gui/.swiftpm/
+*.zip
+
+# macOS
+.DS_Store

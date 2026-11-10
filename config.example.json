@@ -1,0 +1,42 @@
+{
+  "source_folder": "~/QuotationSummary/ใบเสนอราคาที่ขายงานได้",
+  "output_file": "",
+  "recursive": true,
+  "extractor": "auto",
+  "claude_model": "claude-sonnet-5-5",
+  "claude_backend": "claude_code",
+  "claude_code_path": "",
+  "claude_code_keychain_service": "quotation-summary-claude-code",
+  "claude_code_timeout_sec": 300,
+  "claude_code_max_files_per_run": 50,
+  "claude_code_config_dir": "~/Library/Application Support/QuotationSummary/claude-code",
+  "keychain_service": "quotation-summary-anthropic",
+  "cache_file": "~/Library/Application Support/QuotationSummary/cache.json",
+  "max_pdf_mb": 30,
+  "companies": [
+    {
+      "sheet_name": "Company A",
+      "display_name": "บริษัท ตัวอย่าง เอ จำกัด",
+      "tax_id": "0100000000001",
+      "aliases": [
+        "ตัวอย่าง เอ",
+        "Company A"
+      ]
+    },
+    {
+      "sheet_name": "Company B",
+      "display_name": "บริษัท ตัวอย่าง บี จำกัด",
+      "tax_id": "0100000000002",
+      "aliases": [
+        "ตัวอย่าง บี",
+        "Company B"
+      ]
+    },
+    {
+      "sheet_name": "Company C",
+      "display_name": "(ยังไม่ระบุ - แก้ในไฟล์ config.json)",
+      "tax_id": "",
+      "aliases": []
+    }
+  ]
+}
